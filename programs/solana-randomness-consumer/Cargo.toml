@@ -1,0 +1,21 @@
+[package]
+name = "solana-randomness-consumer"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_randomness_consumer"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+switchboard-solana = "0.29.99"
+solana-randomness-service = { version = "1.0.2", features = ["cpi"] }
