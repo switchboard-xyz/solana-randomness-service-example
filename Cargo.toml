@@ -1,7 +1,6 @@
 [workspace]
-members = [
-    "programs/*"
-]
+members = ["programs/*"]
+exclude = ["crates/*"]
 
 [profile.release]
 overflow-checks = true

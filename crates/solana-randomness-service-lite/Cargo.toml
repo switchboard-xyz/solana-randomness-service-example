@@ -1,0 +1,25 @@
+[workspace]
+
+[package]
+name = "solana-randomness-service-lite"
+description = "An on-chain randomness service for Solana programs"
+version = "1.0.1"
+edition = "2021"
+keywords = ["switchboard", "oracle", "solana"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_randomness_service_lite"
+path = "src/lib.rs"
+
+[features]
+default = []
+
+[dependencies]
+borsh = "0.10"
+solana-program = ">= 1.9.13"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "doc_cfg"]

@@ -10,7 +10,7 @@ dependencies:
     version: 0.29.0
   '@switchboard-xyz/solana-randomness-service':
     specifier: 1.0.0
-    version: 1.0.0(fastestsmallesttextencoderdecoder@1.0.22)
+    version: link:../solana-randomness-service/javascript
   '@switchboard-xyz/solana.js':
     specifier: 3.2.5
     version: 3.2.5(fastestsmallesttextencoderdecoder@1.0.22)
@@ -391,20 +391,6 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
     dev: true
-
-  /@switchboard-xyz/solana-randomness-service@1.0.0(fastestsmallesttextencoderdecoder@1.0.22):
-    resolution: {integrity: sha512-zszfAeOf6KzyH1GkTsYv7L1WGow1wOv9qm3vsym/VZDyeHp3XeThqeEX6XglA8MVi3lejgw6ffn3gLoSoVccbw==}
-    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
-    dependencies:
-      '@coral-xyz/anchor': 0.29.0
-      '@switchboard-xyz/common': 2.3.17
-      '@switchboard-xyz/solana.js': 3.2.5(fastestsmallesttextencoderdecoder@1.0.22)
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - fastestsmallesttextencoderdecoder
-      - utf-8-validate
-    dev: false
 
   /@switchboard-xyz/solana.js@3.2.5(fastestsmallesttextencoderdecoder@1.0.22):
     resolution: {integrity: sha512-gCovHDTHCr+JPSwB5+JXqoKPwLs4GKM0sqUEEcQHJZXLpIAzE3Q0RDQOS76rgnpNR0sDYzv8a9aneab8GTG4Ag==}
